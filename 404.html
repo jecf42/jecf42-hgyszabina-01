@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<title>Átirányítás / Redirection …</title>
+	<link rel="canonical" href="https://jecf42.github.io/jecf42-hgyszabina-01-01/hu/kezdolap/">
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const lang = navigator.language || "";
+			const magyar = lang.toLowerCase().startsWith("hu");
+			document.documentElement.lang = magyar ? "hu" : "en";
+			if (magyar) {
+				document.title = "Átirányítás…";
+				document.getElementById("cim").textContent = "Átirányítás folyamatban…";
+				document.getElementById("szoveg").textContent = "Ha nem történt meg ";
+				document.getElementById("link").textContent = "kattints ide";
+				window.location.replace("https://jecf42.github.io/jecf42-hgyszabina-01-01/hu/kezdolap/");
+			}
+			else {
+				document.title = "Redirecting…";
+				document.getElementById("cim").textContent = "Redirecting…";
+				document.getElementById("szoveg").textContent = "If nothing happens ";
+				document.getElementById("link").textContent = "click here";
+				window.location.replace("https://jecf42.github.io/jecf42-hgyszabina-01-01/en/home/");
+			}
+		});
+	</script>
+	<style>
+		body {
+			text-align: justify;
+			margin: 40px;
+		}
+		.sans {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.serif {
+			font-family: "Times New Roman", Times, serif;
+		}
+	</style>
+</head>
+<body>
+<header class="sans"><h1 id="cim">Átirányítás folyamatban…</h1></header>
+<footer>
+	<div>
+		<span id="szoveg">Ha nem történt meg </span><a id="link" href="https://jecf42.github.io/jecf42-hgyszabina-01-01/hu/kezdolap/">kattints ide</a>!
+	</div>
+</footer>
+</body>
+</html>
+<!-- Made with AI.-->
