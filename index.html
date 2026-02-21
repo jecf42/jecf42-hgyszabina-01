@@ -6,16 +6,17 @@
 	<link rel="canonical" href="https://jecf42.github.io/jecf42-hgyszabina-01/hu/kezdolap/">
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			document.documentElement.lang = magyar ? "hu" : "en";
 			const lang = navigator.language || "";
 			const magyar = lang.toLowerCase().startsWith("hu");
+			document.documentElement.lang = magyar ? "hu" : "en";
 			if (magyar) {
 				document.title = "Átirányítás…";
 				document.getElementById("cim").textContent = "Átirányítás folyamatban…";
 				document.getElementById("szoveg").textContent = "Ha nem történt meg ";
 				document.getElementById("link").textContent = "kattints ide";
-				window.location.replace("https://jecf42.github.io/jecf42-hgyszabina-01/hu/kezdolap");
-			} else {
+				window.location.replace("https://jecf42.github.io/jecf42-hgyszabina-01/hu/kezdolap/");
+			}
+			else {
 				document.title = "Redirecting…";
 				document.getElementById("cim").textContent = "Redirecting…";
 				document.getElementById("szoveg").textContent = "If nothing happens ";
@@ -23,7 +24,7 @@
 				window.location.replace("https://jecf42.github.io/jecf42-hgyszabina-01/en/home/");
 			}
 		});
-		</script>
+	</script>
 	<style>
 		body {
 			text-align: justify;
